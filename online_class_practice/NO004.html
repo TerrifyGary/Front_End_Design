@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body{
+            padding: 100px 0;
+            background: linear-gradient(20deg, #fff, #000) fixed center
+                        center /100% 100%;
+        }
+
+        .wrap{
+            width: 1200px;
+            margin: auto;
+        }
+
+        .item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 70px;
+            /* background-color: #ccc; */
+        }
+
+        .item h2{
+            font-weight: 900;
+        }
+        
+        .item p{
+            font-weight: 300;
+        }
+
+        .item .pic{
+            width: 55%;
+            flex-shrink: 0;
+        }
+
+        .item .pic img{
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .item .txt{
+            width: 55%;
+            /* background-color: #fa8; */
+            padding: 50px 30px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+        }
+
+        .item > :first-child{
+            margin-right: -10%;
+        }
+
+        .item:nth-child(1) .txt{
+            background-color: rgba(240,174,193,0.7);
+        }
+        .item:nth-child(2) .txt{
+            background-color: rgba(42,253,208,0.7);
+        }
+        .item:nth-child(3) .txt{
+            background-color: #fec979;
+        }
+        .item:nth-child(4) .txt{
+            background-color: #95dbd6;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!--item 1-->
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/600/350/?random=1">
+            </div>
+            <div class="txt">
+                <h2>阿聲阿聲~~我愛你</h2>
+                <p>真的很感謝你一路走來的陪伴與支持。
+                    我知道一路上走過來，剛進入第二個月了，歷經了許多風風雨雨。
+                    這次真的很開心，你在第二個月紀念日跑來花蓮找我，讓我有信心繼續努力。
+                </p>
+            </div>
+        </div>
+        <!--item 2-->
+        <div class="item">
+            <div class="txt">
+                <h2>關於今天聊天講的那個</h2>
+                <p>我知道你需要一個窗口做抒發，我自己也會啦哈哈哈，就是在我真的很憤怒又不能在當下爆炸的時候，希望能聽我抱(ㄎㄠˋ)怨(ㄅㄟˇ)
+                    但是，不知道欸欸欸，有時候只是講講笑笑，但是我覺得妳今天好生氣唷。
+                    可能是我也是翁寧那種白目屬性的人類，我覺得應該不用太生氣啦。
+                </p>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/600/350/?random=2">
+            </div>
+            
+        </div>
+        <!--item 3-->
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/600/350/?random=3">
+            </div>
+            <div class="txt">
+                <h2>關於情緒這個東西呢</h2>
+                <p>我自己是覺得，在平常我是做的滿好的(因為常常我都是那個把別人弄爆炸的XD)。
+                    我今天看到你今天把整個事情想得很認真、很負面，其實我有點嚇到。
+                    我知道你都有一些爆炸的點，都是說說講講就可以過去了。
+                    但是，今天看到別人毫不在意，結果你今天這樣氣撲撲，我覺得有點捨不得欸欸。
+                </p>
+            </div>
+        </div>
+        <!--item 4-->
+        <div class="item">
+            <div class="txt">
+                <h2>不然這樣試看看好不好</h2>
+                <p>以後別人不認真怎麼樣，你不要太care好不好，以後我們在這方面約定一個原則。
+                    如果別人理智線還沒有斷掉之前，不可以隨隨便便就失去理智好不好。
+                    不然很虧欸欸欸，只有你生氣，別人永遠不知道他自己錯在哪，你說對不對?
+                    好啦~~~ 愛你 啾咪咪 阿聲聲~~~
+                </p>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/600/350/?random=4">
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
