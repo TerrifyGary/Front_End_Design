@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <title>This is Header.</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .main-header{
+            background: linear-gradient(0deg, #fe70d8, #3713c1);
+
+        }
+
+        .main-header .container{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            min-width: 1200px;
+            margin:auto;
+        }
+
+        .main-header .logo{
+            width: 100px;
+        }
+
+        .main-header .logo img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        
+
+        .main-header .main-nav{
+            margin: auto;
+        }
+
+        .main-header .main-nav a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 1em;
+            position: relative;
+            transform: translateY(10px);
+            /* transition: .3s; */
+        }
+
+        .main-header .main-nav a:hover{
+            transform: translateY(-10px);
+        }
+
+        .main-header .main-nav a:after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            bottom: -5px;
+            height: 0;
+            border-bottom: 1px solid #fff;
+            transition: .3s;
+        }
+
+        .main-header .main-nav a:hover:after{
+             left: 0;
+             right: 0;
+        }
+
+        .main-header .header-search{
+            display: flex;
+        }
+        .main-header .header-search button,
+        .main-header .header-search input{
+            border: none;
+            background-color: #fff;
+            padding: 5px 10px;
+        }
+
+        .main-header .header-search button:focus,
+        .main-header .header-search input:focus{
+            outline: none;
+        }
+
+        .main-header .header-search button{
+            border-radius: 0 100px 100px 0;
+        }
+        .main-header .header-search input{
+            border-radius: 100px 0 0 100px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="https://picsum.photos/100/100/?random=1">
+            </a>
+            <nav class="main-nav">
+                <a href="#">我是阿聲</a>
+                <a href="#">我是金魚</a>
+                <a href="#">我是翁寧</a>
+                <a href="#">我是芷儀</a>
+            </nav>
+
+            <form action="" class="header-search">
+                <input type="text" placeholder="Search..">
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
