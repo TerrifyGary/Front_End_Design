@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麵包屑</title>
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        body{
+            background-color: #562870;
+        }
+
+        .wrap{
+            padding: 10px 0;
+            background-color: #ec008b;
+            box-shadow: 0px 5px 5px hsla(260,100%,20%,.5);
+        }
+
+        .breadcrumb{
+            width: 90%;
+            margin: auto;
+            display: flex;
+        }
+
+        .breadcrumb li{
+            padding: 0 20px;
+        }
+
+        
+        .breadcrumb li+li{
+            padding-left: 0;
+        }
+
+        .breadcrumb li+li:before{
+            content: '>';
+            color: #fff;
+        }
+
+        .breadcrumb li:last-child,
+        .breadcrumb a{
+            text-decoration: none;
+            color: #fff;
+            margin-left: 20px;
+        }
+
+        .breadcrumb a:hover{
+            color: #ff0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <ol class="breadcrumb">
+            <li><a href="#">阿聲</a></li>
+            <li><a href="#">很喜歡Gary</a></li>
+            <li><a href="#">再一起的時光</a></li>
+            <li><a href="#">來花蓮玩</a></li>
+            <li><a href="#">第三天</a></li>
+            <li><a href="#">去貓咪咖啡廳</a></li>
+        </ol>
+    </div>
+</body>
+</html>
