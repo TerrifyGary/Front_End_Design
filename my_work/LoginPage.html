@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoginPage</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    *{
+      margin:0%;
+      padding:0%;
+    }
+
+    .headerContent{
+      padding: 10px;
+      color:gray;
+      border-bottom: 1px solid black;
+    }
+
+    .applyTopBarContent{
+      padding: 15px;
+    }
+
+    .fillInBoxContent{
+      font-size:small;
+      padding: 8px;
+      color:#A0A0A0;
+    }
+
+    .register{
+      padding-left:20px;
+    }
+    
+    .applyButton{
+      background-color: #5B7ACA;
+      color:#FFFFFF;
+      padding: 10px;
+      display: block;
+      width: 93.5%;
+      margin-top: 15px;
+      border-radius: 5px;
+    }
+
+    .fillInBox{
+      padding-bottom: 12px;
+    }
+
+    .fillInBoxInput{
+      width: 90%;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h2 class="headerContent">&#10006</h2>
+  </div>
+
+  <div class="applyTopBar">
+    <h2 class="applyTopBarContent">註冊</h2>
+  </div>
+
+  <form class="register">
+    <div class="fillInBox">
+      <h3 class="fillInBoxContent">姓名</h3>
+      <input class="fillInBoxInput" type="text"  placeholder=" Name"><br>
+    </div>
+    
+    <div class="fillInBox">
+      <h3 class="fillInBoxContent">信箱</h3>
+      <input class="fillInBoxInput" type="text" placeholder=" Email"><br>
+    </div>
+
+    <div class="fillInBox">
+      <h3 class="fillInBoxContent">手機</h3>
+      <input class="fillInBoxInput" type="text" placeholder=" 09xx"><br>
+    </div>
+
+    <div class="fillInBox">
+      <h3 class="fillInBoxContent">密碼</h3>
+      <input class="fillInBoxInput" type="text" placeholder=" 6-8 位中英文數字"><br>
+    </div>
+
+    <div class="applyBox">
+       <button type="button" class="applyButton">註冊</button> 
+    </div>
+  </form>
+
+</body>
+</html>
