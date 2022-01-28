@@ -13,23 +13,36 @@
     }
 
     .headerContent{
-      padding: 10px;
-      color:gray;
-      border-bottom: 1px solid black;
+      padding-left: 18px;
+      padding-top: 31px;
+      font-size: 24px;
+      color: #516B92;
+      /* border-bottom: 1px solid black; */
     }
 
     .applyTopBarContent{
-      padding: 15px;
+      padding-left: 31px;
+      padding-bottom: 30px;
+      padding-top: 34px;
+      font-weight: 700;
+      font-size: 24px;
+      color: #516B92;
     }
 
     .fillInBoxContent{
-      font-size:small;
-      padding: 8px;
-      color:#A0A0A0;
+      padding: 0px 0px 6px 34px;
+      font-size: 12px;
+      color: #495580;
+      text-align: left;
+      font-weight: 600;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .register{
       padding-left:20px;
+      padding-right: 20px;
     }
     
     .applyButton{
@@ -38,7 +51,8 @@
       padding: 10px;
       display: block;
       width: 93.5%;
-      margin-top: 15px;
+      margin: 15px 0px 21px 10px;
+
       border-radius: 5px;
     }
 
@@ -46,48 +60,61 @@
       padding-bottom: 12px;
     }
 
-    .fillInBoxInput{
-      width: 90%;
-      padding: 5px;
-      border-radius: 5px;
+    .forget{
+      float: right;
+      font-size: 9px;
+      padding: 0px 17px 15px 0px;
     }
+
+    .fillInBoxInput{
+      word-wrap: break-word;
+      width: 80%;
+      padding: 8px 0px 8px 0px;
+      border-radius: 5px;
+      color: #EDEDED;
+      background-color: #EDEDED;
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      border: 20px rgba(0, 0, 0, .4);
+      box-shadow: inset 2px 3px 4px -2px rgba(17, 17, 17, 0.31);
+      border-radius: 5px;
+      margin: auto;
+      
+    }
+
     
   </style>
 </head>
 
 <body>
   <div class="header">
-    <h2 class="headerContent">&#10006</h2>
+    <h2 class="headerContent">&lt;</h2>
   </div>
 
   <div class="applyTopBar">
-    <h2 class="applyTopBarContent">註冊</h2>
+    <h2 class="applyTopBarContent">登入</h2>
   </div>
 
   <form class="register">
     <div class="fillInBox">
-      <h3 class="fillInBoxContent">姓名</h3>
-      <input class="fillInBoxInput" type="text"  placeholder=" Name"><br>
+      <h3 class="fillInBoxContent">手機號碼/Email</h3>
+      <input class="fillInBoxInput" type="text"  placeholder="  請輸入手機或Email"><br>
     </div>
     
-    <div class="fillInBox">
-      <h3 class="fillInBoxContent">信箱</h3>
-      <input class="fillInBoxInput" type="text" placeholder=" Email"><br>
-    </div>
-
-    <div class="fillInBox">
-      <h3 class="fillInBoxContent">手機</h3>
-      <input class="fillInBoxInput" type="text" placeholder=" 09xx"><br>
-    </div>
-
-    <div class="fillInBox">
+    <div class="fillInBox" style="padding-bottom: 0px;">
       <h3 class="fillInBoxContent">密碼</h3>
-      <input class="fillInBoxInput" type="text" placeholder=" 6-8 位中英文數字"><br>
+      <input class="fillInBoxInput" type="text" placeholder="  請輸入密碼"><br>
+      
+    </div>
+    <h4 class="forget">forget?</h4>
+    <div class="applyBox">
+       <button type="button" class="applyButton">登入</button> 
     </div>
 
     <div class="applyBox">
-       <button type="button" class="applyButton">註冊</button> 
-    </div>
+      <button type="button" class="applyButton">立即註冊</button> 
+   </div>
   </form>
 
 </body>
