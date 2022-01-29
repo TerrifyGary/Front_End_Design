@@ -8,20 +8,22 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
     *{
-      margin:0%;
-      padding:0%;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 'Noto Sans TC', sans-serif;
     }
 
     .headerContent{
-      padding-left: 18px;
-      padding-top: 31px;
+      padding-left: 27px;
+      padding-top: 36px;
       font-size: 24px;
       color: #516B92;
       /* border-bottom: 1px solid black; */
     }
 
     .applyTopBarContent{
-      padding-left: 31px;
+      padding-left: 42px;
       padding-bottom: 30px;
       padding-top: 34px;
       font-weight: 700;
@@ -30,7 +32,7 @@
     }
 
     .fillInBoxContent{
-      padding: 0px 0px 6px 34px;
+      padding: 0px 0px 6px 53px;
       font-size: 12px;
       color: #495580;
       text-align: left;
@@ -48,11 +50,11 @@
     .applyButton{
       background-color: #5B7ACA;
       color:#FFFFFF;
-      padding: 10px;
+      padding: 0px;
       display: block;
-      width: 93.5%;
-      margin: 15px 0px 21px 10px;
-
+      width: 229px;
+      height: 29px;
+      margin: auto;
       border-radius: 5px;
     }
 
@@ -63,15 +65,15 @@
     .forget{
       float: right;
       font-size: 9px;
-      padding: 0px 17px 15px 0px;
+      padding: 0px 47px 15px 0px;
     }
 
     .fillInBoxInput{
-      word-wrap: break-word;
-      width: 80%;
+      /* word-wrap: break-word; */
+      width: 229px;
       padding: 8px 0px 8px 0px;
       border-radius: 5px;
-      color: #EDEDED;
+      color: #9696968F;
       background-color: #EDEDED;
       display: flex;
       justify-content: center; 
@@ -79,11 +81,8 @@
       border: 20px rgba(0, 0, 0, .4);
       box-shadow: inset 2px 3px 4px -2px rgba(17, 17, 17, 0.31);
       border-radius: 5px;
-      margin: auto;
-      
+      margin: auto;      
     }
-
-    
   </style>
 </head>
 
@@ -108,11 +107,11 @@
       
     </div>
     <h4 class="forget">forget?</h4>
-    <div class="applyBox">
+    <div class="applyBox" style="padding-top:31px">
        <button type="button" class="applyButton">登入</button> 
     </div>
 
-    <div class="applyBox">
+    <div class="applyBox" style="padding-top:21px;">
       <button type="button" class="applyButton">立即註冊</button> 
    </div>
   </form>
